@@ -1,0 +1,28 @@
+<svg width="403" height="578" viewBox="0 0 403 578" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_di_48_34)">
+        <path d="M104 325.755C104 428.755 256 528.255 373.5 410.755C440.667 345.255 543.4 182.655 417 56.2553C259 -101.745 192 112.755 293.5 214.255C395 315.755 104 222.755 104 325.755Z" fill="#211E1E"/>
+        <path d="M104 325.755C104 428.755 256 528.255 373.5 410.755C440.667 345.255 543.4 182.655 417 56.2553C259 -101.745 192 112.755 293.5 214.255C395 315.755 104 222.755 104 325.755Z" fill="url(#paint0_radial_48_34)" fill-opacity="0.4"/>
+    </g>
+    <defs>
+        <filter id="filter0_di_48_34" x="-9.15527e-05" y="0" width="480.876" height="577.89" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="-50" dy="60"/>
+            <feGaussianBlur stdDeviation="27"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.264705 0 0 0 0 0.271151 0 0 0 0 0.329167 0 0 0 0.3 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_48_34"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_48_34" result="shape"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset/>
+            <feGaussianBlur stdDeviation="12"/>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.898039 0 0 0 0 0.917647 0 0 0 0 0.937255 0 0 0 0.8 0"/>
+            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_48_34"/>
+        </filter>
+        <radialGradient id="paint0_radial_48_34" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(159.288 475.332) rotate(-45.7067) scale(461.165 306.293)">
+            <stop stop-color="#E5EAEF"/>
+            <stop offset="1" stop-color="#E5EAEF" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+</svg>

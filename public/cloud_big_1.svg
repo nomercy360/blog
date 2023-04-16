@@ -1,0 +1,28 @@
+<svg width="455" height="337" viewBox="0 0 455 337" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_di_1_17)">
+        <path d="M351 -9.13129C351 -88.831 151.481 -88.831 23.377 -24.6285C-50.2461 -24.6285 54.2987 -68.9061 -76.7505 -68.9061C-207.8 -68.9061 -140.803 110.787 23.377 193.07C187.557 275.352 242.038 171.669 242.038 78.686C242.038 -14.297 351 70.5684 351 -9.13129Z" fill="#211E1E"/>
+        <path d="M351 -9.13129C351 -88.831 151.481 -88.831 23.377 -24.6285C-50.2461 -24.6285 54.2987 -68.9061 -76.7505 -68.9061C-207.8 -68.9061 -140.803 110.787 23.377 193.07C187.557 275.352 242.038 171.669 242.038 78.686C242.038 -14.297 351 70.5684 351 -9.13129Z" fill="url(#paint0_radial_1_17)" fill-opacity="0.4"/>
+    </g>
+    <defs>
+        <filter id="filter0_di_1_17" x="-150" y="-71" width="605" height="408" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="50" dy="60"/>
+            <feGaussianBlur stdDeviation="27"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.264705 0 0 0 0 0.271151 0 0 0 0 0.329167 0 0 0 0.3 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_17"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_17" result="shape"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset/>
+            <feGaussianBlur stdDeviation="12"/>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.898039 0 0 0 0 0.917647 0 0 0 0 0.937255 0 0 0 0.8 0"/>
+            <feBlend mode="normal" in2="shape" result="effect2_innerShadow_1_17"/>
+        </filter>
+        <radialGradient id="paint0_radial_1_17" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256.5 223) rotate(-134.083) scale(397.445 240.562)">
+            <stop stop-color="#E5EAEF"/>
+            <stop offset="1" stop-color="#E5EAEF" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+</svg>

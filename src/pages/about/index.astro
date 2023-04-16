@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="About Me">
+    <section id="contacts" class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+            <p class="mb-6">If you have any questions or would like to get in touch, feel free to reach out through any
+                of the following channels:</p>
+
+            <!-- Contact Information -->
+            <div class="contact-info mb-6">
+                <p><strong>Email:</strong> <a href="mailto:your-email@example.com" class="text-blue-600">your-email@example.com</a>
+                </p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                <p><strong>Address:</strong> 123 Main St, Anytown, USA</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="social-media mb-8">
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer"
+                   class="text-blue-600 mr-4">Twitter</a>
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+                   class="text-blue-600 mr-4">LinkedIn</a>
+                <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer"
+                   class="text-blue-600 mr-4">Facebook</a>
+                <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer"
+                   class="text-blue-600">Instagram</a>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form mb-8">
+                <h3 class="mb-4">Or send me a message:</h3>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required
+                           class="w-full p-2 mb-4 border border-gray-300"/>
+                    <input type="email" name="email" placeholder="Your Email" required
+                           class="w-full p-2 mb-4 border border-gray-300"/>
+                    <textarea name="message" placeholder="Your Message" required
+                              class="w-full p-2 mb-4 border border-gray-300 resize-none"></textarea>
+                    <button type="submit" class="bg-blue-600 text-white py-2 px-4 cursor-pointer uppercase">Send
+                        Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</Layout>

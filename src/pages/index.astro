@@ -1,0 +1,246 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to my site!">
+    <!-- Contacts Section -->
+    <main>
+        <div class="parallax-background">
+            <img src="/cloud_big_1.svg" alt="Big Cloud" class="cloud cloud-big cloud-big-1"/>
+            <img src="/cloud_big_2.svg" alt="Big Cloud" class="cloud cloud-big cloud-big-2"/>
+            <img src="/cloud_big_3.svg" alt="Big Cloud" class="cloud cloud-big cloud-big-3"/>
+            <img src="/cloud_big_4.svg" alt="Big Cloud" class="cloud cloud-big cloud-big-4"/>
+            <img src="/cloud_big_5.svg" alt="Big Cloud" class="cloud cloud-big cloud-big-5"/>
+            <img src="/cloud_big_6.svg" alt="Big Cloud" class="cloud cloud-big cloud-big-6"/>
+            <img src="/cloud_medium_1.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-1"/>
+            <img src="/cloud_small_1.svg" alt="Small Cloud" class="cloud cloud-small cloud-small-1"/>
+            <img src="/cloud_small_2.svg" alt="Small Cloud" class="cloud cloud-small cloud-small-2"/>
+            <img src="/cloud_small_2.svg" alt="Small Cloud" class="cloud cloud-small cloud-small-3"/>
+            <img src="/cloud_small_2.svg" alt="Small Cloud" class="cloud cloud-small cloud-small-4"/>
+            <img src="/cloud_medium_2.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-2"/>
+            <img src="/cloud_medium_3.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-3"/>
+            <img src="/cloud_medium_4.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-4"/>
+            <img src="/cloud_medium_5.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-5"/>
+            <img src="/cloud_medium_6.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-6"/>
+            <img src="/cloud_medium_7.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-7"/>
+            <img src="/cloud_medium_8.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-8"/>
+            <img src="/cloud_medium_9.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-9"/>
+            <img src="/cloud_medium_10.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-10"/>
+            <img src="/cloud_medium_11.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-11"/>
+            <img src="/cloud_medium_12.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-12"/>
+            <img src="/cloud_medium_13.svg" alt="Medium Cloud" class="cloud cloud-medium cloud-medium-13"/>
+        </div>
+        <img src="/title.svg" alt="Future Clouds" class="mt-10 w-1/2"/>
+        <header class="bg-transparent mt-14">
+            <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <div class="flex items-center">
+                    <!-- Add other navigation links here, if needed -->
+                    <a href="/about" class="text-neutral-400 hover:text-neutral-800 mr-6 text-3xl">About</a>
+
+                    <!-- Language Buttons -->
+                    <div class="flex items-center">
+                        <button class="text-neutral-400 hover:text-neutral-800 mr-2 text-3xl">EN</button>
+                        <button class="text-neutral-400 hover:text-neutral-800 text-3xl">RU</button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 items-center text-center px-20">
+            <Card title="Hello World"
+                  body="How implementation of AWS clound network increases startup potential in a long-term"
+                  date="2021-01-01"/>
+            <Card title="Hello World"
+                  body="How implementation of AWS clound network increases startup potential in a long-term"
+                  date="2021-01-01"/>
+        </div>
+    </main>
+</Layout>
+
+<script>
+    let ticking = false;
+
+    function updateCloudPositions() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const clouds = document.querySelectorAll('.cloud');
+
+        clouds.forEach((cloud) => {
+            const speed = cloud.classList.contains('cloud-big') ? -1 : cloud.classList.contains('cloud-medium') ? -0.6 : -0.4;
+            const newY = scrollTop * speed;
+            cloud.style.transform = `translateY(${newY}px)`;
+        });
+
+        ticking = false;
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(updateCloudPositions);
+            ticking = true;
+        }
+    }
+
+    document.addEventListener('scroll', requestTick);
+
+</script>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: #E5EAEF;
+    }
+
+    .parallax-background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: #E5EAEF;
+    }
+
+    main {
+        position: relative;
+        z-index: 1;
+        background: #E5EAEF;
+        min-height: 400vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .cloud {
+        position: absolute;
+    }
+
+    /* cloud big is nearest, cloud small is farthest */
+    .cloud-big {
+        z-index: 3;
+    }
+
+    .cloud-medium {
+        z-index: 2;
+    }
+
+    .cloud-small {
+        z-index: 1;
+    }
+
+    .cloud-big-1 {
+        top: 0;
+        left: 0;
+    }
+
+    .cloud-big-2 {
+        top: 0;
+        right: 0;
+    }
+
+    .cloud-medium-1 {
+        top: 25%;
+        left: 0;
+    }
+
+    .cloud-small-1 {
+        top: 25%;
+        left: 10%;
+    }
+
+    .cloud-medium-2 {
+        top: 0;
+        right: 10%;
+    }
+
+    .cloud-big-3 {
+        top: 80%;
+        left: 0;
+    }
+
+    .cloud-medium-3 {
+        top: 80%;
+        left: 10%;
+    }
+
+    .cloud-small-2 {
+        top: 80%;
+        left: 20%;
+    }
+
+    .cloud-small-3 {
+        top: 100%;
+        left: 10%;
+    }
+
+    .cloud-medium-4 {
+        top: 110%;
+        left: 0;
+    }
+
+    .cloud-medium-5 {
+        top: 110%;
+        left: 20%;
+    }
+
+    .cloud-small-4 {
+        top: 110%;
+        right: 10%;
+    }
+
+    .cloud-big-4 {
+        top: 110%;
+        right: 0;
+    }
+
+
+    .cloud-big-5 {
+        top: 260%;
+        left: 0;
+    }
+
+    .cloud-big-6 {
+        top: 290%;
+        right: 0;
+    }
+
+    .cloud-medium-6 {
+        top: 50%;
+        left: 60%;
+    }
+
+
+    .cloud-medium-7 {
+        top: 110%;
+        right: 10%;
+    }
+
+    .cloud-medium-8 {
+        top: 140%;
+        right: 40%;
+    }
+
+    .cloud-medium-9 {
+        top: 140%;
+        left: 0;
+    }
+
+    .cloud-medium-10 {
+        top: 150%;
+        left: 10%;
+    }
+
+    .cloud-medium-11 {
+        top: 200%;
+        left: 40%;
+    }
+
+    .cloud-medium-12 {
+        top: 205%;
+        right: 12%;
+    }
+
+    .cloud-medium-13 {
+        top: 250%;
+        right: 0;
+    }
+</style>
